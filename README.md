@@ -38,6 +38,8 @@ One necessary consideration is due to the separation of the front-end and back-e
 ## TravisCI
 The TravisCI deployment for this project is done through a custom SSH script using Amazon Web Services EC2, rather than a more plug-and-play service more directly integrated with Travis CI. This was largely to allow for further customization and to allow for both the front and back-ends to be developed separately and hosted within the same server. These scripts can be found at root, including `./.travis.yml` and `./deploy.sh`. Additionally, encrypted SSH keys also live in this directory and are necessary for Travis to complete deployment.
 
+ https://creativecommons.org/licenses/by-nc-sa/4.0/
+
 Some variables, both sensitive and not, are configured through the TravisCI dashboard and are invoked throughout the scripts as environment variables. TravisCI allows for both private and public variables, so this has been a useful feature, particuarly in allowing for different variables with identical names in different branch environments.
 
 ## Contact
